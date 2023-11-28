@@ -1,0 +1,41 @@
+\input{preamble.tex}
+\begin{document}
+
+\pagenumbering{roman} 
+\setcounter{page}{0}
+
+% Cover
+\include{Content/Cover/Cover.tex}
+
+% Title page
+\include{Content/TitlePage/TitlePage.tex}
+
+% List of tables
+% \listoftables
+% \addcontentsline{toc}{chapter}{Lijst van tabellen}
+
+% Glossary
+\printnoidxglossaries
+\addcontentsline{toc}{chapter}{Woordenlijst}
+
+% table of contet 
+\tableofcontents
+% Content
+\newpage
+% \cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\include{Content/1_Inleiding/Inleiding.tex}
+\include{Content/2_Onderzoek/Onderzoek.tex}
+\include{Content/3_Projectresultaat/Projectresultaat.tex}
+\include{Content/4_Projectactiviteiten/ProjectActiviteiten.tex}
+\include{Content/5_Projectgrenzen/Projectgrenzen.tex}
+\include{Content/6_Kwaliteitsbewaking/Kwaliteitsbewaking.tex}
+\include{Content/7_Planning/Planning.tex}
+\printbibliography
+
+\appendix
+\include{Content/Bijlagen.tex}
+% \include{Content/Appendix/A_Stakeholder_Analysis/Stakeholder_Analysis.tex}
+
+\end{document}
